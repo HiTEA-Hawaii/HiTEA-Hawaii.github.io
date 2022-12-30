@@ -1,40 +1,27 @@
-.home {
-  @include flex(column, center, center);
+.carousel {
+  width: 100%;
+}
 
+.carousel-image {
+  max-height: 650px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  filter: brightness(50%);
+}
 
-  .home-banner {
-    @include flex(column, center, center);
-    @include background("/assets/images/home/bg.png", no-repeat, cover);
-    @include size(100%, 350px);
-    color: white;
-
-    @include laptop{
-      height: 500px;
-      text-align: center;
-    }
+.carousel-caption {
+  @include flex(row, center, center);
+  text-align: center;
+  height: 58%;
+  h1 {
+    font-size: 80px;
   }
 
-  .home-specialize {
-    @include flex(row, space-around, center);
-    @include size(100%, 100%);
-    color: white;
-    margin: 50px;
-    background-color: $blue;
-
-    @include laptop{
-      @include flex(column, center, center);
-      margin: 50px 0px;
-    }
-  }
-
-  .home-specialize-item {
-    padding: 20px;
-    @include flex(column, center, center);
-    color: white;
-
-    img {
-      @include size(300px, 300px);
-      border-radius: 100%;
+  @include laptop{
+    h1 {
+      font-size: 40px;
+      height: 85%;
     }
   }
 }
