@@ -2,6 +2,14 @@
   padding: 20px;
   @include size(100%, 100%);
 
+  a {
+    color: black;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
   .menu-header{
     @include laptop{
       font-size: $h3;
