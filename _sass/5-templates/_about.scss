@@ -5,8 +5,10 @@
   .about-banner {
     @include flex(column, center, center);
     @include background("/assets/images/about/banner.png", no-repeat, cover);
+    filter: brightness(100%);
     @include size(100%, 350px);
     color: white;
+
   }
 
   .about-description {
@@ -21,5 +23,17 @@
         @include size(500px, 350px);
       }
     }
+  }
+
+  .about-body {
+    width: 100%;
+    padding: 40px 0px;
+
+    @include tablet{
+      padding: 20px;
+    }
+  }
+  .about-cross {
+    width: 100%;
   }
 }
