@@ -11,6 +11,14 @@
 
   }
 
+  .col-md {
+    @include tablet {
+      h2 {
+        padding-top: 10px;
+      }
+    }
+  }
+
   .about-description {
     padding: 50px;
     color: black;
