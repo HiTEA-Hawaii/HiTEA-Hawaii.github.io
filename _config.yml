@@ -1,7 +1,5 @@
 sass:
   sass_dir: _sass
-
-url: "https://hitea-hawaii.github.io/"
 plugins:
   - jekyll-sitemap
 
